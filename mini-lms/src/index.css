@@ -1,0 +1,124 @@
+/* ==========================================
+   ESTILOS GENERALES Y FUENTE
+   ========================================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ==========================================
+   BARRA DE NAVEGACIÓN (NAVBAR)
+   ========================================== */
+.navbar {
+  background-color: #1a1e21; /* Fondo oscuro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.marca {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Enlaces del Navbar estilo botones */
+.nav-btn {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-left: 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: #343a40;
+}
+
+/* ==========================================
+   BOTÓN "AGREGAR ESTUDIANTE"
+   ========================================== */
+.boton {
+  display: inline-block;
+  background-color: #007bff; /* Azul brillante */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.1);
+  transition: background 0.2s;
+}
+
+.boton:hover {
+  background-color: #0056b3;
+}
+
+/* ==========================================
+   DISEÑO DE LA TABLA
+   ========================================== */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabla th {
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.tabla td {
+  padding: 15px;
+  border-bottom: 1px solid #f1f3f5;
+  color: #495057;
+}
+
+/* Filas intercaladas (Efecto cebra) */
+.tabla tbody tr:nth-child(even) {
+  background-color: #f1f3f5;
+}
+
+/* ==========================================
+   BADGES (ETIQUETAS DE ESTADO)
+   ========================================== */
+.badge {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Estado Matriculado (Verde) */
+.badge.ok {
+  background-color: #198754;
+}
+
+/* Estado Pendiente (Gris) */
+.badge.pend {
+  background-color: #6c757d;
+}
